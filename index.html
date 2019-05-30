@@ -20,8 +20,8 @@
     	<span class="phone-header">+7 (812) 555-05-55</span>
     	<p class="adress-header">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
         <ul class="user-navigation">
-          <li class="login-link">Вход</li>
-          <li class="registration">Регистрация</li>
+          <li><a class="login-link" href="login.html">Вход</li>
+          <li><a class="registration" href="registration.html">Регистрация</li>
         </ul>
         <nav>
         <ul class="site-navigation">
@@ -113,6 +113,26 @@
     <section class="modal modal-form">
       <h2 class="visually-hidden">Напишите нам</h2>
       <span class="modal-close">x</span>
+      <form class="write-us" action="http://echo.technomart.ru" method="post">
+       <p>
+        <label class="user-name-label" for="name">
+           <input class="user-name" type="text" name="name" placeholder="Ваше имя">
+           Ваше имя
+        </label>
+        <label class="user-email-label" for="email">
+           <input class="user-email" type="email" name="email" placeholder="email@example.com">
+           Ваш e-mail
+        </label>
+       </p>
+       <p>
+       	<label class="user-letter-label" for="letter">
+       		<input class="user-letter" type="textarea" name="letter" placeholder="В свободной форме">
+            Текст письма
+       	</label>
+       	<button class="button" type="submit">
+            Отправить
+        </button>
+      </form>
     </section>
   </body>
 </html>
